@@ -63,8 +63,8 @@ Code_ESP32/
 - Connexion USB
 
 Schemas :
-![Schema emetteur](../Schemas_electriques/emetteur.png)
-![Schema recepteur](../Schemas_electriques/recepteur.png)
+![Schema emetteur](Schemas_electriques/emetteur.png)
+![Schema recepteur](Schemas_electriques/recepteur.png)
 
 ### Étape 2 : Flasher les ESP32
 
