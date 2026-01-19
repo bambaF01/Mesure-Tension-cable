@@ -131,7 +131,6 @@ Schemas :
 
  **Calibration** :
 - Facteurs de calibration configurables (lignes 12-15)
-- Division par √2 pour correction mécanique
 - Affichage sur Moniteur Série pour débogage
 
 ### ESP32 Esclave (Récepteur)
@@ -289,7 +288,6 @@ Consultez les README dans chaque dossier pour plus de détails :
 
 ##  Notes techniques
 
-- **Correction √2** : Division par racine de 2 pour compensation mécanique
 - **Bluetooth SPP** : Utilise le profil Serial Port Profile
 - **Fréquence** : ~10 mesures/seconde (délai 100ms)
 - **Précision** : 2 décimales pour les forces en Newtons
