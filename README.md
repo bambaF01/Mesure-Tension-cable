@@ -295,6 +295,4 @@ Consultez les README dans chaque dossier pour plus de détails :
 
 ---
 
-**Profitez de votre système de mesure ESP32 ! **
-
-Pour toute question, consultez les README détaillés dans chaque sous-dossier.
+Profitez de votre système de mesure ESP32 ! 
