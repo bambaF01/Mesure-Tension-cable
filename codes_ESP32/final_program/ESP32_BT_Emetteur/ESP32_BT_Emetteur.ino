@@ -152,10 +152,10 @@ void loop()
 
   if (scale1.is_ready() && scale2.is_ready() && scale3.is_ready() && scale4.is_ready())
   {
-    float p1 = scale1.get_units(1) / sqrt(2.0);
-    float p2 = scale2.get_units(1) / sqrt(2.0);
-    float p3 = scale3.get_units(1) / sqrt(2.0);
-    float p4 = scale4.get_units(1) / sqrt(2.0);
+    float p1 = scale1.get_units(1);
+    float p2 = scale2.get_units(1);
+    float p3 = scale3.get_units(1);
+    float p4 = scale4.get_units(1);
 
     float f1 = (p1 / 1000.0) * 9.80665;
     float f2 = (p2 / 1000.0) * 9.80665;
