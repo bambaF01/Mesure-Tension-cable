@@ -1,8 +1,8 @@
-# 📡 ESP32 Bluetooth Émetteur (Maître)
+#  ESP32 Bluetooth Émetteur (Maître)
 
 Code pour l'ESP32 maître qui lit 4 capteurs HX711 et transmet les données via Bluetooth.
 
-## 📋 Description
+##  Description
 
 Cet ESP32 agit comme **maître Bluetooth**. Il :
 - Lit 4 capteurs de force HX711
@@ -11,7 +11,7 @@ Cet ESP32 agit comme **maître Bluetooth**. Il :
 - Affiche les valeurs sur le Moniteur Série
 - Permet la tare manuelle via bouton
 
-## 🔌 Connexions matérielles
+##  Connexions matérielles
 
 ### Capteurs HX711
 
@@ -33,7 +33,7 @@ Cet ESP32 agit comme **maître Bluetooth**. Il :
 
 - Port USB pour alimentation, débogage et enregistrement des données
 
-## ⚙️ Configuration
+##  Configuration
 
 ### 1. Facteurs de calibration
 
@@ -64,7 +64,7 @@ Pour obtenir l'adresse MAC :
 2. Ouvrir le Moniteur Série de l'esclave
 3. Noter l'adresse MAC affichée au démarrage
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Bibliothèques requises
 
@@ -84,7 +84,7 @@ Dans Arduino IDE, installer :
 2. Ajuster les facteurs de calibration si nécessaire
 3. Compiler et téléverser vers l'ESP32
 
-## 📊 Fonctionnement
+##  Fonctionnement
 
 ### Au démarrage
 
@@ -124,7 +124,7 @@ Le Moniteur Série affiche continuellement :
 3. Les 4 capteurs sont remis à zéro
 4. Message : `Tare effectuee!`
 
-## 🔧 Détails techniques
+##  Détails techniques
 
 ### Calcul des forces
 
@@ -153,7 +153,7 @@ F1\tF2\tF3\tF4\n
 - **10 tentatives** avant de redémarrer le Bluetooth
 - **Délai de 3 secondes** entre chaque tentative
 
-## 🔍 Dépannage
+##  Dépannage
 
 ### Problème : "Bluetooth initialization failed!"
 
@@ -186,7 +186,7 @@ F1\tF2\tF3\tF4\n
 3. Recalibrer les capteurs
 4. Améliorer l'alimentation électrique
 
-## 📝 Personnalisation
+##  Personnalisation
 
 ### Modifier la fréquence d'échantillonnage
 
@@ -210,15 +210,15 @@ Ligne 75 :
 SerialBT.begin("ESP32Master", true);  // Changer le nom
 ```
 
-## 💡 Conseils
+##  Conseils
 
-- ⚡ Alimenter les HX711 avec une source stable
-- 🔄 Effectuer la tare au démarrage sans charge
-- 📏 Attendre la stabilisation avant les mesures
-- 🔌 Démarrer l'esclave AVANT le maître
-- 💾 Les données sont aussi disponibles via USB série
+-  Alimenter les HX711 avec une source stable
+-  Effectuer la tare au démarrage sans charge
+-  Attendre la stabilisation avant les mesures
+-  Démarrer l'esclave AVANT le maître
+-  Les données sont aussi disponibles via USB série
 
-## 📚 Références
+##  Références
 
 - [Bibliothèque HX711](https://github.com/bogde/HX711)
 - [BluetoothSerial ESP32](https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial)
