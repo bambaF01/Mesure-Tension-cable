@@ -113,7 +113,7 @@ Schemas :
 
 3. Les données sont enregistrées dans `Enregistrement_CSV/donnees_csv/`
 
-## 🔧 Fonctionnalités détaillées
+##  Fonctionnalités détaillées
 
 ### ESP32 Maître (Émetteur)
 
