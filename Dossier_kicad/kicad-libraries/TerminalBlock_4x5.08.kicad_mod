@@ -1,0 +1,30 @@
+
+(module TerminalBlock_4x5.08 (layer F.Cu) (tedit 00000000)
+  (ATTRIBUTES (author "ChatGPT") (description "Terminal block 4-pin 5.08mm pitch, PTH") (tags "terminal block screw 5.08mm"))
+  (fp_text reference J? (at 0 -3.5) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
+  (fp_text value TerminalBlock_4x5.08 (at 0 3.5) (layer F.Fab) (effects (font (size 1 1) (thickness 0.15))))
+
+  ;; Silkscreen outline
+  (fp_line (start -12.7 2.5) (end 12.7 2.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 12.7 2.5) (end 12.7 -2.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 12.7 -2.5) (end -12.7 -2.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -12.7 -2.5) (end -12.7 2.5) (layer F.SilkS) (width 0.15))
+
+  ;; Courtyard
+  (fp_line (start -13.5 3.0) (end 13.5 3.0) (layer Dwgs.User) (width 0.05))
+  (fp_line (start 13.5 3.0) (end 13.5 -3.0) (layer Dwgs.User) (width 0.05))
+  (fp_line (start 13.5 -3.0) (end -13.5 -3.0) (layer Dwgs.User) (width 0.05))
+  (fp_line (start -13.5 -3.0) (end -13.5 3.0) (layer Dwgs.User) (width 0.05))
+
+  ;; Pads (through-hole) - 4 pads, pitch 5.08 mm
+  (pad "1" thru_hole circle (at -7.62 0) (size 2.7 2.7) (drill 1.2) (layers *.Cu *.Mask) (type plated_through_hole))
+  (pad "2" thru_hole circle (at -2.54 0) (size 2.7 2.7) (drill 1.2) (layers *.Cu *.Mask) (type plated_through_hole))
+  (pad "3" thru_hole circle (at 2.54 0) (size 2.7 2.7) (drill 1.2) (layers *.Cu *.Mask) (type plated_through_hole))
+  (pad "4" thru_hole circle (at 7.62 0) (size 2.7 2.7) (drill 1.2) (layers *.Cu *.Mask) (type plated_through_hole))
+
+  ;; Assembly labels
+  (fp_text user A (at -7.62 -2.0) (layer F.Fab) (effects (font (size 0.9 0.9) (thickness 0.12))))
+  (fp_text user B (at -2.54 -2.0) (layer F.Fab) (effects (font (size 0.9 0.9) (thickness 0.12))))
+  (fp_text user C (at 2.54 -2.0) (layer F.Fab) (effects (font (size 0.9 0.9) (thickness 0.12))))
+  (fp_text user D (at 7.62 -2.0) (layer F.Fab) (effects (font (size 0.9 0.9) (thickness 0.12))))
+)

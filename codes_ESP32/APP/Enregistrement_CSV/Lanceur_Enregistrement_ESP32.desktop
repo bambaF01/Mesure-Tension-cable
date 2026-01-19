@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name= Enregistreur ESP32 CSV
+Comment=Lance l'enregistreur de données ESP32 via port série
+Exec=bash -c "cd \"$(dirname \"%k\")\" && bash ./lecture_USB_ESP32_linux.sh"
+Icon=utilities-terminal
+Terminal=true
+Categories=Development;Utility;
+Keywords=ESP32;CSV;Serial;Data;Recording;

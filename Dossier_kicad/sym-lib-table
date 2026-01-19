@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/esp32-ParallelRobot-backups/New_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "extensions")(type "KiCad")(uri "${KIPRJMOD}/esp32-ParallelRobot-backups/extensions.kicad_sym")(options "")(descr ""))
+)

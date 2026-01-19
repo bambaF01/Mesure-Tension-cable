@@ -1,0 +1,257 @@
+Info: Processing symbol 'SBC-OLED01V1:'.
+Info: Processing symbol 'button1:'.
+Info: Processing symbol 'U1:RF_Module:ESP32-WROOM-32D'.
+Info: Processing symbol 'U5:Package_SO:SOP-16_3.9x9.9mm_P1.27mm'.
+Info: Processing symbol 'U3:Package_SO:SOP-16_3.9x9.9mm_P1.27mm'.
+Info: Processing symbol 'U2:Package_SO:SOP-16_3.9x9.9mm_P1.27mm'.
+Info: Processing symbol 'U4:Package_SO:SOP-16_3.9x9.9mm_P1.27mm'.
+Add net unconnected-(U3-INA--Pad7).
+Connected U3 pin 10 to unconnected-(U3-INB+-Pad10).
+Add net unconnected-(U3-INB+-Pad10).
+Connected U3 pin 16 to GND.
+Connected U3 pin 11 to Net-(U1-IO13).
+Connected U3 pin 1 to unconnected-(U3-VSUP-Pad1).
+Add net unconnected-(U3-VSUP-Pad1).
+Connected U3 pin 7 to unconnected-(U3-INA--Pad7).
+Add net unconnected-(U3-VFB-Pad4).
+Connected U3 pin 9 to unconnected-(U3-INB--Pad9).
+Add net unconnected-(U3-INB--Pad9).
+Connected U3 pin 6 to unconnected-(U3-VBG-Pad6).
+Add net unconnected-(U3-VBG-Pad6).
+Connected U3 pin 15 to unconnected-(U3-RATE-Pad15).
+Add net unconnected-(U3-BASE-Pad2).
+Connected U3 pin 2 to unconnected-(U3-BASE-Pad2).
+Add net unconnected-(U3-AVDD-Pad3).
+Connected U3 pin 4 to unconnected-(U3-VFB-Pad4).
+Add net unconnected-(U3-XO-Pad13).
+Connected U3 pin 13 to unconnected-(U3-XO-Pad13).
+Added U4 (footprint 'Package_SO:SOP-16_3.9x9.9mm_P1.27mm').
+Changed REF** reference designator to U4.
+Changed U4 value from SOP-16_3.9x9.9mm_P1.27mm to HX711.
+Updated U4 symbol association from  to /c9e60ed3-e187-460d-8413-4b107918d9a2.
+Updated U4 fields.
+Updated U4 sheetname to 'Root'.
+Updated U4 sheetfile to 'esp32-ParallelRobot.kicad_sch'.
+Updated U4 footprint filters to 'SOP*3.9x9.9mm*P1.27mm*'.
+Add net unconnected-(U4-BASE-Pad2).
+Changed REF** reference designator to U3.
+Connected U2 pin 12 to Net-(U1-IO17).
+Add net unconnected-(U2-VSUP-Pad1).
+Connected U2 pin 1 to unconnected-(U2-VSUP-Pad1).
+Connected U2 pin 5 to GND.
+Add net unconnected-(U2-INB--Pad9).
+Connected U2 pin 9 to unconnected-(U2-INB--Pad9).
+Connected U2 pin 16 to GND.
+Add net unconnected-(U2-INA--Pad7).
+Connected U2 pin 7 to unconnected-(U2-INA--Pad7).
+Add net unconnected-(U2-INB+-Pad10).
+Connected U2 pin 10 to unconnected-(U2-INB+-Pad10).
+Add net unconnected-(U2-RATE-Pad15).
+Connected U2 pin 15 to unconnected-(U2-RATE-Pad15).
+Added U3 (footprint 'Package_SO:SOP-16_3.9x9.9mm_P1.27mm').
+Add net unconnected-(U3-RATE-Pad15).
+Changed U3 value from SOP-16_3.9x9.9mm_P1.27mm to HX711.
+Updated U3 symbol association from  to /0466c26b-4775-40f2-841d-736f6abe641f.
+Updated U3 fields.
+Updated U3 sheetname to 'Root'.
+Updated U3 sheetfile to 'esp32-ParallelRobot.kicad_sch'.
+Updated U3 footprint filters to 'SOP*3.9x9.9mm*P1.27mm*'.
+Connected U3 pin 5 to GND.
+Connected U3 pin 12 to Net-(U1-IO16).
+Add net unconnected-(U3-XI-Pad14).
+Connected U3 pin 14 to unconnected-(U3-XI-Pad14).
+Add net unconnected-(U3-INA+-Pad8).
+Connected U3 pin 8 to unconnected-(U3-INA+-Pad8).
+Connected U4 pin 3 to unconnected-(U4-AVDD-Pad3).
+Connected U3 pin 3 to unconnected-(U3-AVDD-Pad3).
+Add net unconnected-(U5-VFB-Pad4).
+Updated U5 sheetname to 'Root'.
+Updated U5 sheetfile to 'esp32-ParallelRobot.kicad_sch'.
+Updated U5 footprint filters to 'SOP*3.9x9.9mm*P1.27mm*'.
+Add net unconnected-(U5-AVDD-Pad3).
+Connected U5 pin 3 to unconnected-(U5-AVDD-Pad3).
+Add net unconnected-(U5-BASE-Pad2).
+Connected U5 pin 2 to unconnected-(U5-BASE-Pad2).
+Add net unconnected-(U5-RATE-Pad15).
+Connected U5 pin 15 to unconnected-(U5-RATE-Pad15).
+Add net unconnected-(U5-VBG-Pad6).
+Connected U5 pin 6 to unconnected-(U5-VBG-Pad6).
+Connected U5 pin 12 to Net-(U1-IO15).
+Connected U5 pin 11 to Net-(U1-IO13).
+Add net unconnected-(U5-XI-Pad14).
+Connected U5 pin 14 to unconnected-(U5-XI-Pad14).
+Updated U5 fields.
+Connected U5 pin 4 to unconnected-(U5-VFB-Pad4).
+Add net unconnected-(U5-INB+-Pad10).
+Connected U5 pin 10 to unconnected-(U5-INB+-Pad10).
+Add net unconnected-(U5-XO-Pad13).
+Connected U5 pin 13 to unconnected-(U5-XO-Pad13).
+Connected U5 pin 16 to GND.
+Add net unconnected-(U5-INA--Pad7).
+Connected U5 pin 7 to unconnected-(U5-INA--Pad7).
+Add net unconnected-(U5-INB--Pad9).
+Connected U5 pin 9 to unconnected-(U5-INB--Pad9).
+Add net unconnected-(U5-VSUP-Pad1).
+Connected U5 pin 1 to unconnected-(U5-VSUP-Pad1).
+Connected U5 pin 5 to GND.
+Add net unconnected-(U5-INA+-Pad8).
+Connected U5 pin 8 to unconnected-(U5-INA+-Pad8).
+Add net unconnected-(U4-XO-Pad13).
+Add net unconnected-(U4-AVDD-Pad3).
+Connected U2 pin 14 to unconnected-(U2-XI-Pad14).
+Connected U4 pin 12 to Net-(U1-IO14).
+Connected U4 pin 11 to Net-(U1-IO13).
+Add net unconnected-(U4-RATE-Pad15).
+Connected U4 pin 15 to unconnected-(U4-RATE-Pad15).
+Add net unconnected-(U4-INB--Pad9).
+Connected U4 pin 9 to unconnected-(U4-INB--Pad9).
+Connected U4 pin 16 to GND.
+Add net unconnected-(U4-XI-Pad14).
+Connected U4 pin 14 to unconnected-(U4-XI-Pad14).
+Add net unconnected-(U4-INA--Pad7).
+Connected U4 pin 7 to unconnected-(U4-INA--Pad7).
+Add net unconnected-(U4-INA+-Pad8).
+Connected U4 pin 8 to unconnected-(U4-INA+-Pad8).
+Connected U4 pin 2 to unconnected-(U4-BASE-Pad2).
+Connected U4 pin 13 to unconnected-(U4-XO-Pad13).
+Add net unconnected-(U4-INB+-Pad10).
+Connected U4 pin 10 to unconnected-(U4-INB+-Pad10).
+Add net unconnected-(U4-VBG-Pad6).
+Connected U4 pin 6 to unconnected-(U4-VBG-Pad6).
+Add net unconnected-(U4-VFB-Pad4).
+Connected U4 pin 4 to unconnected-(U4-VFB-Pad4).
+Connected U4 pin 5 to GND.
+Add net unconnected-(U4-VSUP-Pad1).
+Connected U4 pin 1 to unconnected-(U4-VSUP-Pad1).
+Added U5 (footprint 'Package_SO:SOP-16_3.9x9.9mm_P1.27mm').
+Changed REF** reference designator to U5.
+Changed U5 value from SOP-16_3.9x9.9mm_P1.27mm to HX711.
+Updated U5 symbol association from  to /530fca0d-12be-42de-96eb-12d210e91b90.
+Connected U1 pin 18 to unconnected-(U1-NC-Pad18).
+Connected U1 pin 26 to unconnected-(U1-IO4-Pad26).
+Add net unconnected-(U1-IO5-Pad29).
+Connected U1 pin 29 to unconnected-(U1-IO5-Pad29).
+Connected U1 pin 39 to GND.
+Add net Net-(U1-IO17).
+Connected U1 pin 28 to Net-(U1-IO17).
+Add net Net-(U1-IO15).
+Connected U1 pin 23 to Net-(U1-IO15).
+Add net Net-(SBC-OLED01V1-SCL).
+Connected U1 pin 9 to Net-(SBC-OLED01V1-SCL).
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-NC-Pad18).
+Add net unconnected-(U1-IO4-Pad26).
+Connected U1 pin 38 to GND.
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-NC-Pad32).
+Connected U1 pin 32 to unconnected-(U1-NC-Pad32).
+Add net unconnected-(U1-NC-Pad20).
+Connected U1 pin 20 to unconnected-(U1-NC-Pad20).
+Connected U1 pin 39 to GND.
+Add net Net-(U1-IO16).
+Connected U1 pin 27 to Net-(U1-IO16).
+Add net unconnected-(U1-IO35-Pad7).
+Connected U1 pin 7 to unconnected-(U1-IO35-Pad7).
+Connected U1 pin 39 to GND.
+Connected U1 pin 2 to GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 8 to GND.
+Added U1 (footprint 'RF_Module:ESP32-WROOM-32D').
+Changed REF** reference designator to U1.
+Changed U1 value from ESP32-WROOM-32D to ESP32-WROOM-32E.
+Updated U1 symbol association from  to /7bf0779a-7177-4a61-aac8-e6d642cfde12.
+Updated U1 fields.
+Updated U1 sheetname to 'Root'.
+Updated U1 sheetfile to 'esp32-ParallelRobot.kicad_sch'.
+Updated U1 footprint filters to 'ESP32?WROOM?32D*'.
+Add net Net-(U1-IO13).
+Connected U1 pin 16 to Net-(U1-IO13).
+Add net unconnected-(U1-IO18-Pad30).
+Connected U1 pin 30 to unconnected-(U1-IO18-Pad30).
+Add net GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Add net unconnected-(U2-XO-Pad13).
+Add net unconnected-(U1-RXD0/IO3-Pad34).
+Connected U1 pin 34 to unconnected-(U1-RXD0/IO3-Pad34).
+Add net Net-(U1-IO14).
+Connected U1 pin 13 to Net-(U1-IO14).
+Add net unconnected-(U1-SENSOR_VP-Pad4).
+Connected U1 pin 4 to unconnected-(U1-SENSOR_VP-Pad4).
+Add net unconnected-(U1-IO2-Pad24).
+Connected U1 pin 24 to unconnected-(U1-IO2-Pad24).
+Add net unconnected-(U1-NC-Pad19).
+Connected U1 pin 19 to unconnected-(U1-NC-Pad19).
+Add net unconnected-(U1-IO0-Pad25).
+Connected U1 pin 25 to unconnected-(U1-IO0-Pad25).
+Add net unconnected-(U1-IO23-Pad37).
+Connected U1 pin 37 to unconnected-(U1-IO23-Pad37).
+Updated U2 sheetfile to 'esp32-ParallelRobot.kicad_sch'.
+Connected U1 pin 12 to GND.
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-NC-Pad17).
+Connected U1 pin 17 to unconnected-(U1-NC-Pad17).
+Add net unconnected-(U1-EN-Pad3).
+Connected U1 pin 3 to unconnected-(U1-EN-Pad3).
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Added U2 (footprint 'Package_SO:SOP-16_3.9x9.9mm_P1.27mm').
+Changed REF** reference designator to U2.
+Changed U2 value from SOP-16_3.9x9.9mm_P1.27mm to HX711.
+Updated U2 symbol association from  to /896e6db6-3628-4403-8fcf-f964f7c20112.
+Updated U2 fields.
+Updated U2 sheetname to 'Root'.
+Connected U1 pin 21 to unconnected-(U1-NC-Pad21).
+Updated U2 footprint filters to 'SOP*3.9x9.9mm*P1.27mm*'.
+Add net unconnected-(U2-VBG-Pad6).
+Connected U2 pin 6 to unconnected-(U2-VBG-Pad6).
+Add net unconnected-(U2-INA+-Pad8).
+Connected U2 pin 8 to unconnected-(U2-INA+-Pad8).
+Connected U2 pin 11 to Net-(U1-IO13).
+Add net unconnected-(U2-VFB-Pad4).
+Connected U2 pin 4 to unconnected-(U2-VFB-Pad4).
+Add net unconnected-(U2-BASE-Pad2).
+Connected U2 pin 2 to unconnected-(U2-BASE-Pad2).
+Add net unconnected-(U2-AVDD-Pad3).
+Connected U2 pin 3 to unconnected-(U2-AVDD-Pad3).
+Add net unconnected-(U2-XI-Pad14).
+Connected U2 pin 13 to unconnected-(U2-XO-Pad13).
+Add net unconnected-(U1-IO25-Pad10).
+Add net unconnected-(U1-NC-Pad21).
+Add net unconnected-(U1-IO34-Pad6).
+Connected U1 pin 6 to unconnected-(U1-IO34-Pad6).
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-IO22-Pad36).
+Connected U1 pin 36 to unconnected-(U1-IO22-Pad36).
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-IO26-Pad11).
+Connected U1 pin 11 to unconnected-(U1-IO26-Pad11).
+Add net unconnected-(U1-IO12-Pad14).
+Connected U1 pin 14 to unconnected-(U1-IO12-Pad14).
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Add net unconnected-(U1-NC-Pad22).
+Connected U1 pin 39 to GND.
+Connected U1 pin 10 to unconnected-(U1-IO25-Pad10).
+Connected U1 pin 39 to GND.
+Connected U1 pin 39 to GND.
+Connected U1 pin 15 to GND.
+Connected U1 pin 5 to unconnected-(U1-SENSOR_VN-Pad5).
+Add net unconnected-(U1-SENSOR_VN-Pad5).
+Connected U1 pin 35 to unconnected-(U1-TXD0/IO1-Pad35).
+Add net unconnected-(U1-TXD0/IO1-Pad35).
+Connected U1 pin 1 to GND.
+Connected U1 pin 31 to unconnected-(U1-IO19-Pad31).
+Add net unconnected-(U1-IO19-Pad31).
+Connected U1 pin 33 to unconnected-(U1-IO21-Pad33).
+Add net unconnected-(U1-IO21-Pad33).
+Connected U1 pin 22 to unconnected-(U1-NC-Pad22).
+Error: Cannot add SBC-OLED01V1 (no footprint assigned).
+Error: Cannot add button1 (no footprint assigned).
+
+
+Info: Total warnings: 0, errors: 2.
