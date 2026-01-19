@@ -225,5 +225,3 @@ SerialBT.begin("ESP32Master", true);  // Changer le nom
 - [Datasheet HX711](https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf)
 
 ---
-
-**Retour au projet** : [README principal](../README.md)
