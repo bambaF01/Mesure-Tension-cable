@@ -130,13 +130,12 @@ Le Moniteur Série affiche continuellement :
 
 ```cpp
 // Lecture brute des capteurs
-float p1 = scale1.get_units(1) / sqrt(2.0);
+float p1 = scale1.get_units(1);
 
 // Conversion en Newtons (masse en kg × g)
 float f1 = (p1 / 1000.0) * 9.80665;
 ```
 
-**Correction √2** : Compensation pour montage mécanique à 45°
 
 ### Format de transmission Bluetooth
 
