@@ -1,8 +1,8 @@
-# 📟 ESP32 Bluetooth Récepteur (Esclave)
+#  ESP32 Bluetooth Récepteur (Esclave)
 
 Code pour l'ESP32 esclave qui reçoit les données via Bluetooth et les affiche sur un écran OLED.
 
-## 📋 Description
+##  Description
 
 Cet ESP32 agit comme **esclave Bluetooth**. Il :
 - Reçoit les données de force via Bluetooth
@@ -11,7 +11,7 @@ Cet ESP32 agit comme **esclave Bluetooth**. Il :
 - Permet de mettre en pause l'affichage via bouton
 - Affiche son adresse MAC au démarrage
 
-## 🔌 Connexions matérielles
+##  Connexions matérielles
 
 ### Écran OLED SSD1306 (I2C)
 
@@ -36,7 +36,7 @@ Cet ESP32 agit comme **esclave Bluetooth**. Il :
 - Port USB pour alimentation et débogage
 - Pas nécessaire en fonctionnement normal
 
-## ⚙️ Configuration
+##  Configuration
 
 ### 1. Adresse I2C de l'écran
 
@@ -57,7 +57,7 @@ Ligne 66 :
 SerialBT.begin("ESP32Slave", false);  // Modifier le nom si désiré
 ```
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Bibliothèques requises
 
@@ -80,7 +80,7 @@ Dans Arduino IDE, installer via Library Manager :
 3. **Noter l'adresse MAC Bluetooth** affichée
 4. Utiliser cette adresse dans le code du maître
 
-## 📊 Fonctionnement
+##  Fonctionnement
 
 ### Au démarrage
 
@@ -134,7 +134,7 @@ Received data: 12.35    23.46   34.57   45.68
    ```
 3. **Appuyer à nouveau** pour reprendre l'affichage
 
-## 🔧 Détails techniques
+##  Détails techniques
 
 ### Format d'affichage OLED
 
@@ -169,7 +169,7 @@ sscanf(incomingData.c_str(), "%f\t%f\t%f\t%f", &f1, &f2, &f3, &f4);
 - **Fréquence** : Standard (100 kHz)
 - **Broches** : SDA=21, SCL=22 (défaut ESP32)
 
-## 🔍 Dépannage
+##  Dépannage
 
 ### Problème : "SSD1306 allocation failed"
 
@@ -204,7 +204,7 @@ sscanf(incomingData.c_str(), "%f\t%f\t%f\t%f", &f1, &f2, &f3, &f4);
   ```
 - Réduire la fréquence d'envoi du maître
 
-## 📝 Personnalisation
+##  Personnalisation
 
 ### Modifier la mise en page OLED
 
@@ -241,22 +241,22 @@ SerialBT.begin("ESP32Slave", false);  // Changer le nom
 2. Modifier le parsing (`sscanf`)
 3. Adapter l'affichage OLED
 
-## 💡 Conseils
+##  Conseils
 
-- 🔋 L'écran OLED peut rester allumé en permanence
-- 📡 Toujours démarrer l'esclave AVANT le maître
-- 🔌 Le bouton pause économise la vie de l'OLED
-- 🖥️ Le Moniteur Série aide au débogage
-- 📝 Noter l'adresse MAC pour la configuration du maître
+-  L'écran OLED peut rester allumé en permanence
+-  Toujours démarrer l'esclave AVANT le maître
+-  Le bouton pause économise la vie de l'OLED
+-  Le Moniteur Série aide au débogage
+-  Noter l'adresse MAC pour la configuration du maître
 
-## 📚 Références
+##  Références
 
 - [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
 - [Adafruit GFX](https://github.com/adafruit/Adafruit-GFX-Library)
 - [BluetoothSerial ESP32](https://github.com/espressif/arduino-esp32/tree/master/libraries/BluetoothSerial)
 - [Datasheet SSD1306](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 
-## 🎨 Améliorations possibles
+##  Améliorations possibles
 
 - Ajouter un graphique des forces en temps réel
 - Afficher des statistiques (min, max, moyenne)
