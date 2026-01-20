@@ -55,6 +55,8 @@ Code_ESP32/
 - Bouton de tare → GPIO 13
 - Batterie exterieure pour la recharge
 
+![Schema emetteur](Schemas_electriques/emetteur.png)
+
 **ESP32 Esclave (Récepteur)** :
 - Écran OLED :
   - SDA → GPIO 21
@@ -62,8 +64,6 @@ Code_ESP32/
 - Bouton pause affichage → GPIO 13
 - Connexion USB
 
-Schemas :
-![Schema emetteur](Schemas_electriques/emetteur.png)
 ![Schema recepteur](Schemas_electriques/recepteur.png)
 
 ### Étape 2 : Flasher les ESP32
