@@ -11,10 +11,10 @@ Ce projet permet de **mesurer 4 forces en temps réel** à l'aide de capteurs HX
 
 ```
 [4x Capteurs HX711] → [ESP32 Maître] → Bluetooth → [ESP32 Esclave] → [Écran OLED]
-                  ↓
-                  [USB/Série]
-                  ↓
-                [Ordinateur] → [Fichiers CSV]
+                                                          ↓
+                                                    [USB/Série]
+                                                          ↓
+                                                    [Ordinateur] → [Fichiers CSV]
 ```
 
 ##  Structure du projet
