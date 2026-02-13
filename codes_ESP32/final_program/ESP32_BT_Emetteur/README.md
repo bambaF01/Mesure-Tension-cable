@@ -74,9 +74,17 @@ Dans Arduino IDE, installer :
 
 ### 2. Configuration Arduino IDE
 
-- **Carte** : ESP32 Dev Module ou WROOM-32E
-- **Port** : Sélectionner le port USB de l'ESP32
-- **Vitesse** : 115200 bauds
+Étapes recommandées pour configurer l'IDE :
+1. Ouvrir Arduino IDE > **Fichier** > **Préférences**.
+2. Dans **URL de gestionnaire de cartes supplémentaires**, ajouter `https://dl.espressif.com/dl/package_esp32_index.json`.
+3. Ouvrir **Outils** > **Type de carte** > **Gestionnaire de cartes...**.
+4. Rechercher `esp32` et installer **esp32 by Espressif Systems**.
+5. Sélectionner **Carte** : ESP32 Dev Module ou WROOM-32E.
+6. Sélectionner **Port** : le port USB de l'ESP32.
+7. Régler **Vitesse** : 115200 bauds.
+
+Illustration de la configuration :
+![Configuration Arduino IDE](../../../IDE_Indication.png)
 
 ### 3. Téléversement
 

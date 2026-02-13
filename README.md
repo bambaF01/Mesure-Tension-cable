@@ -69,20 +69,30 @@ Code_ESP32/
 ### Étape 2 : Flasher les ESP32
 
 1. **Installer Arduino IDE** avec support ESP32
+2. **Configurer l'IDE Arduino (support ESP32)** :
+   - Ouvrir Arduino IDE > **Fichier** > **Préférences**
+   - Dans **URL de gestionnaire de cartes supplémentaires**, ajouter `https://dl.espressif.com/dl/package_esp32_index.json`
+   - Ouvrir **Outils** > **Type de carte** > **Gestionnaire de cartes...**
+   - Rechercher `esp32` et installer **esp32 by Espressif Systems**
+   - Sélectionner **Carte** : ESP32 Dev Module ou WROOM-32E
+   - Sélectionner **Port** : le port USB de l'ESP32
+   - Régler **Vitesse** : 115200 bauds
 
-2. **Installer les bibliothèques** :
+![Configuration Arduino IDE](IDE_Indication.png)
+
+3. **Installer les bibliothèques** :
    - `BluetoothSerial` (inclus avec ESP32)
    - `HX711` (par Bogdan Necula)
    - `Adafruit GFX Library`
    - `Adafruit SSD1306`
 
-3. **Flasher l'ESP32 Esclave d'abord** :
+4. **Flasher l'ESP32 Esclave d'abord** :
    - Ouvrir `ESP32_BT_Recepteur_MAC/ESP32_BT_Recepteur_MAC.ino`
    - Téléverser vers l'ESP32 esclave
    - Ouvrir le Moniteur Série (115200 bauds)
    - **Noter l'adresse MAC Bluetooth** affichée (ex: `8C:4F:00:63:4A:F6`)
 
-4. **Flasher l'ESP32 Maître** :
+5. **Flasher l'ESP32 Maître** :
    - Ouvrir `ESP32_BT_Emetteur/ESP32_BT_Emetteur.ino`
    - **Modifier ligne 28** : remplacer l'adresse MAC par celle de votre esclave :
      ```cpp
