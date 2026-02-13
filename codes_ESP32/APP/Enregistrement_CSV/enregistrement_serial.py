@@ -11,7 +11,7 @@ BAUDRATE = 115200
 DOSSIER_CSV = 'donnees_csv'
 if not os.path.exists(DOSSIER_CSV):
     os.makedirs(DOSSIER_CSV)
-    print(f"📁 Dossier '{DOSSIER_CSV}' créé.")
+    print(f" Dossier '{DOSSIER_CSV}' créé.")
 
 # Chemin complet du fichier CSV dans le dossier dédié
 nom_fichier = f'donnees_forces_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
@@ -48,16 +48,16 @@ def trouver_port_esp32():
     
     return None
 
-print(f"\n📊 Enregistrement des données dans: {FICHIER_CSV}")
+print(f"\n Enregistrement des données dans: {FICHIER_CSV}")
 print("Recherche de l'ESP32...")
 
 PORT = trouver_port_esp32()
 
 if PORT is None:
-    print("❌ Aucun port sélectionné. Arrêt du programme.")
+    print(" Aucun port sélectionné. Arrêt du programme.")
     exit(1)
 
-print(f"\n✅ Utilisation du port: {PORT}")
+print(f"\n Utilisation du port: {PORT}")
 
 try:
     # Ouvrir le port série

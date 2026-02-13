@@ -11,7 +11,7 @@
 #define OLED_RESET -1  // Broche de réinitialisation (ou -1 si partage avec Arduino)
 #define SCREEN_ADDRESS 0x3C  // Adresse I2C pour SBCOLED01V2 (généralement 0x3C)
 // Broches I2C pour ESP32 WROOM-32E
-#define SDA_PIN 21
+#define SDA_PIN 19
 #define SCL_PIN 22
 
 // Bouton poussoir pour arrêt d'affichage

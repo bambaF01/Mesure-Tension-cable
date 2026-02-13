@@ -41,7 +41,7 @@ fi
 show_interface() {
     clear
     echo "╔════════════════════════════════════════╗"
-    echo "║    Enregistreur CSV - ESP32 🔌	     ║"
+    echo "║    Enregistreur CSV - ESP32	     ║"
     echo "╚════════════════════════════════════════╝"
     echo ""
     echo "✓ Python trouvé: $PYTHON_CMD"
