@@ -8,12 +8,14 @@ from tkinter import ttk, filedialog, messagebox
 import queue
 import sys
 import glob
+from pathlib import Path
 
 import serial
 import serial.tools.list_ports
 
 BAUDRATE = 115200
-DEFAULT_CSV_DIR = "donnees_csv"
+APP_NAME = "MesureTension"
+DEFAULT_CSV_DIR = str(Path.home() / APP_NAME / "donnees_csv")
 KEYWORDS = ["ESP32", "CP210", "CH340", "USB Serial", "UART", "Silicon Labs"]
 USB_KEYWORDS = [
     "USB",
@@ -144,6 +146,12 @@ class Recorder:
         self._emit("status", f"Connected to {port}")
         self._emit("status", f"Writing: {self.csv_path}")
 
+    def test_connection(self, port):
+        if self.thread and self.thread.is_alive():
+            raise RuntimeError("Recording already running")
+        ser = serial.Serial(port, BAUDRATE, timeout=1)
+        ser.close()
+
     def _loop(self):
         try:
             while not self.stop_event.is_set():
@@ -271,11 +279,14 @@ class App(tk.Tk):
         buttons = ttk.Frame(self)
         buttons.pack(fill="x", padx=12, pady=8)
 
+        self.connect_btn = ttk.Button(buttons, text="Connect", command=self.connect_port)
+        self.connect_btn.pack(side="left")
+
         self.start_btn = ttk.Button(buttons, text="Start", command=self.start_recording)
-        self.start_btn.pack(side="left")
+        self.start_btn.pack(side="left", padx=8)
 
         self.stop_btn = ttk.Button(buttons, text="Stop", command=self.stop_recording, state="disabled")
-        self.stop_btn.pack(side="left", padx=8)
+        self.stop_btn.pack(side="left")
 
         status_frame = ttk.Frame(self)
         status_frame.pack(fill="x", padx=12)
@@ -350,14 +361,35 @@ class App(tk.Tk):
             return
 
         self.status_var.set("Recording")
+        self.connect_btn.config(state="disabled")
         self.start_btn.config(state="disabled")
         self.stop_btn.config(state="normal")
 
     def stop_recording(self):
         self.recorder.stop()
         self.status_var.set("Idle")
+        self.connect_btn.config(state="normal")
         self.start_btn.config(state="normal")
         self.stop_btn.config(state="disabled")
+
+    def connect_port(self):
+        if self.recorder.thread and self.recorder.thread.is_alive():
+            messagebox.showinfo("Connect", "Recording is already running.")
+            return
+
+        port = self.get_selected_port()
+        if not port:
+            messagebox.showerror("Connect", "Select a serial port first.")
+            return
+
+        try:
+            self.recorder.test_connection(port)
+        except Exception as exc:
+            messagebox.showerror("Connect", str(exc))
+            return
+
+        self.status_var.set(f"Connected ({port})")
+        self.log(f"Connected to {port}")
 
     def update_values(self, values):
         self.last_values_var.set(", ".join(values))

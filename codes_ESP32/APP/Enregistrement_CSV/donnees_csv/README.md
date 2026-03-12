@@ -36,17 +36,26 @@ Chaque session d'enregistrement crée un nouveau fichier unique, aucun risque d'
 
 ### Création automatique
 
-Le dossier `donnees_csv/` est créé automatiquement au premier lancement du script d'enregistrement s'il n'existe pas.
+Le dossier `MesureTension/donnees_csv` est créé automatiquement au premier lancement s'il n'existe pas.
 
 ### Emplacement
 
+Linux/macOS :
 ```
-Enregistrement_CSV/
-└── donnees_csv/
-    ├── donnees_forces_20251022_141230.csv
-    ├── donnees_forces_20251022_143015.csv
-    ├── donnees_forces_20251022_150542.csv
-    └── ...
+~/MesureTension/donnees_csv/
+├── donnees_forces_20251022_141230.csv
+├── donnees_forces_20251022_143015.csv
+├── donnees_forces_20251022_150542.csv
+└── ...
+```
+
+Windows :
+```
+C:\Users\<user>\MesureTension\donnees_csv\
+    donnees_forces_20251022_141230.csv
+    donnees_forces_20251022_143015.csv
+    donnees_forces_20251022_150542.csv
+    ...
 ```
 
 ### Conservation
@@ -109,13 +118,13 @@ ylabel('Force (N)')
 **macOS/Linux** :
 ```bash
 # Supprimer les fichiers de plus de 30 jours
-find donnees_csv/ -name "*.csv" -mtime +30 -delete
+find ~/MesureTension/donnees_csv/ -name "*.csv" -mtime +30 -delete
 ```
 
 **Windows** :
 ```batch
 # Supprimer manuellement ou utiliser PowerShell
-Get-ChildItem -Path "donnees_csv" -Filter "*.csv" | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-30)} | Remove-Item
+Get-ChildItem -Path "$env:USERPROFILE\\MesureTension\\donnees_csv" -Filter "*.csv" | Where-Object {$_.LastWriteTime -lt (Get-Date).AddDays(-30)} | Remove-Item
 ```
 
 

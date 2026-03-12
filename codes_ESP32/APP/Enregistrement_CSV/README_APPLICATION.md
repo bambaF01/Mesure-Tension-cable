@@ -9,14 +9,14 @@ Enregistrement_CSV/
 ├── lecture_USB_ESP32_mac.command     #  Lanceur macOS
 ├── lecture_USB_ESP32_linux.sh        #  Lanceur Linux
 ├── lecture_USB_ESP32_windows.bat     #  Lanceur Windows
+├── build_windows_pyinstaller.bat     #  Build .exe Windows (PyInstaller)
 ├── enregistrement_serial.py          #  Script Python principal
 ├── gui_enregistrement.py             #  Interface graphique locale
+├── make_ico.py                        #  Conversion PNG -> ICO (Windows)
 ├── requirements.txt                  #  Dépendances Python
 ├── README_APPLICATION.md             #  Ce fichier
-└── donnees_csv/                      #  Dossier contenant tous les fichiers CSV
-    ├── donnees_forces_20251022_152345.csv
-    ├── donnees_forces_20251022_154210.csv
-    └── ...
+└── donnees_csv/                      #  Exemple de dossier (voir emplacement réel ci-dessous)
+    └── README.md
 ```
 
 ##  macOS
@@ -47,6 +47,16 @@ Ou depuis le terminal :
 
 ---
 
+##  Windows (EXE PyInstaller)
+
+Pour distribuer un exécutable Windows avec icône :
+
+1.  Ouvrir un terminal **Windows** dans ce dossier
+2.  Lancer : **`build_windows_pyinstaller.bat`**
+3.  L'exe sera dans **`dist/Mesure-Tension.exe`**
+
+---
+
 ##  Fonctionnement
 
 Quand vous lancez l'application :
@@ -74,7 +84,10 @@ L'interface graphique permet :
 
 ##  Fichiers CSV générés
 
-**Emplacement** : Tous les fichiers CSV sont automatiquement enregistrés dans le dossier `donnees_csv/`
+**Emplacement** : Tous les fichiers CSV sont automatiquement enregistrés dans le dossier :
+
+- Linux/macOS : `~/MesureTension/donnees_csv`
+- Windows : `C:\\Users\\<user>\\MesureTension\\donnees_csv`
 
 **Format** : `donnees_forces_YYYYMMDD_HHMMSS.csv`
 
@@ -86,13 +99,13 @@ L'interface graphique permet :
 ...
 ```
 
-Le dossier `donnees_csv/` est créé automatiquement au premier lancement.
+Le dossier est créé automatiquement au premier lancement.
 
 ---
 
 ##  Conseils
 
-- Les fichiers CSV sont automatiquement enregistrés dans `donnees_csv/`
+- Les fichiers CSV sont automatiquement enregistrés dans le dossier `MesureTension/donnees_csv` de l'utilisateur
 - Les lanceurs fonctionnent sur **n'importe quel ordinateur** sans modification
 - La détection de l'ESP32 est automatique, pas besoin de configuration
 

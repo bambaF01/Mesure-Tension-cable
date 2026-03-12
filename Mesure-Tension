@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /home/romanbla1u/Bureau/Stage_Bamba/esp32-ParallelRobot/codes_ESP32/APP/Enregistrement_CSV
+exec /usr/bin/env python3 gui_enregistrement.py

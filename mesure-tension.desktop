@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Mesure Tension
+Comment=GUI pour enregistrement CSV
+Exec=/usr/bin/env python3 /home/romanbla1u/Bureau/Stage_Bamba/esp32-ParallelRobot/codes_ESP32/APP/Enregistrement_CSV/gui_enregistrement.py
+Path=/home/romanbla1u/Bureau/Stage_Bamba/esp32-ParallelRobot/codes_ESP32/APP/Enregistrement_CSV
+Icon=/home/romanbla1u/Bureau/Stage_Bamba/esp32-ParallelRobot/icone-APP.png
+Terminal=false
+Categories=Utility;
+StartupNotify=true
