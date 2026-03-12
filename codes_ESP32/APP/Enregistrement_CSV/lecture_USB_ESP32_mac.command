@@ -27,28 +27,5 @@ if [ $? -ne 0 ]; then
     $PYTHON_CMD -m pip install pyserial
 fi
 
-# Afficher l'en-tête
-clear
-echo "╔════════════════════════════════════════╗"
-echo "║    Enregistreur CSV - ESP32      	 ║"
-echo "╚════════════════════════════════════════╝"
-echo ""
-echo "✓ Python trouvé: $PYTHON_CMD"
-echo "✓ Pyserial installé"
-echo ""
-echo " Connectez l'ESP32 via USB..."
-echo "  Appuyez sur Ctrl+C pour arrêter l'enregistrement"
-echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo ""
-
-# Lancer le script
-$PYTHON_CMD enregistrement_serial.py
-
-echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo " Programme terminé."
-echo " Vos données sont dans le dossier 'donnees_csv/'"
-echo ""
-echo "Appuyez sur Entrée pour fermer..."
-read
+# Lancer directement la GUI
+$PYTHON_CMD gui_enregistrement.py

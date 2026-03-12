@@ -10,6 +10,7 @@ Enregistrement_CSV/
 ├── lecture_USB_ESP32_linux.sh        #  Lanceur Linux
 ├── lecture_USB_ESP32_windows.bat     #  Lanceur Windows
 ├── enregistrement_serial.py          #  Script Python principal
+├── gui_enregistrement.py             #  Interface graphique locale
 ├── requirements.txt                  #  Dépendances Python
 ├── README_APPLICATION.md             #  Ce fichier
 └── donnees_csv/                      #  Dossier contenant tous les fichiers CSV
@@ -50,11 +51,24 @@ Ou depuis le terminal :
 
 Quand vous lancez l'application :
 
+1.  L'interface graphique se lance directement
 1.  Détection automatique du port ESP32
 2.  Connexion automatique
 3.  Création d'un fichier CSV avec horodatage
 4.  Enregistrement en temps réel des 4 forces
 5.  Ctrl+C pour arrêter et sauvegarder
+
+---
+
+##  Fonctionnement (GUI)
+
+L'interface graphique permet :
+
+1.  Selection du port serie (auto-detect possible)
+2.  Choix du dossier de sortie
+3.  Bouton Start pour lancer l'enregistrement
+4.  Bouton Stop pour terminer et sauvegarder
+5.  Les valeurs recentes s'affichent en direct
 
 ---
 

@@ -74,7 +74,7 @@ Code_ESP32/
    - Dans **URL de gestionnaire de cartes supplémentaires**, ajouter `https://dl.espressif.com/dl/package_esp32_index.json`
    - Ouvrir **Outils** > **Type de carte** > **Gestionnaire de cartes...**
    - Rechercher `esp32` et installer **esp32 by Espressif Systems**
-   - Sélectionner **Carte** : ESP32 Dev Module ou WROOM-32E
+   - Sélectionner **Carte** : ESP32 Dev Module 
    - Sélectionner **Port** : le port USB de l'ESP32
    - Régler **Vitesse** : 115200 bauds
 

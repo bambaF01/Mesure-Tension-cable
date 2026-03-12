@@ -37,46 +37,5 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Fonction pour afficher l'interface
-show_interface() {
-    clear
-    echo "╔════════════════════════════════════════╗"
-    echo "║    Enregistreur CSV - ESP32	     ║"
-    echo "╚════════════════════════════════════════╝"
-    echo ""
-    echo "✓ Python trouvé: $PYTHON_CMD"
-    echo "✓ Pyserial installé"
-    echo ""
-    echo " Connectez l'ESP32 via USB..."
-    echo "  Appuyez sur Ctrl+C pour arrêter l'enregistrement"
-    echo ""
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    echo ""
-}
-
-# Fonction pour lancer le script
-run_script() {
-    show_interface
-    $PYTHON_CMD enregistrement_serial.py
-    echo ""
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    echo " Programme terminé."
-    echo " Vos données sont dans le dossier 'donnees_csv/'"
-    echo ""
-    echo "Appuyez sur Entrée pour fermer..."
-    read
-}
-
-# Lancer le script dans un nouveau terminal
-if command -v gnome-terminal &> /dev/null; then
-    gnome-terminal -- bash -c "cd '$DIR' && export PYTHON_CMD='$PYTHON_CMD' && $(declare -f show_interface run_script) && run_script"
-elif command -v konsole &> /dev/null; then
-    konsole -e bash -c "cd '$DIR' && export PYTHON_CMD='$PYTHON_CMD' && $(declare -f show_interface run_script) && run_script"
-elif command -v xterm &> /dev/null; then
-    xterm -e bash -c "cd '$DIR' && export PYTHON_CMD='$PYTHON_CMD' && $(declare -f show_interface run_script) && run_script"
-elif command -v x-terminal-emulator &> /dev/null; then
-    x-terminal-emulator -e bash -c "cd '$DIR' && export PYTHON_CMD='$PYTHON_CMD' && $(declare -f show_interface run_script) && run_script"
-else
-    # Fallback: lancer dans le terminal actuel
-    run_script
-fi
+# Lancer directement la GUI
+$PYTHON_CMD gui_enregistrement.py

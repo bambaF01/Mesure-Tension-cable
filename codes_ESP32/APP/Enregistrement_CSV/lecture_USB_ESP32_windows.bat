@@ -51,23 +51,5 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
-REM Afficher les informations
-echo [OK] Python trouve: %PYTHON_CMD%
-echo [OK] Pyserial installe
-echo.
-echo Connectez l'ESP32 via USB...
-echo ATTENTION: Appuyez sur Ctrl+C pour arreter l'enregistrement
-echo.
-echo ========================================
-echo.
-
-REM Lancer le script
-%PYTHON_CMD% enregistrement_serial.py
-
-echo.
-echo ========================================
-echo [OK] Programme termine.
-echo [i] Vos donnees sont dans le dossier 'donnees_csv/'
-echo.
-echo Appuyez sur une touche pour fermer...
-pause >nul
+REM Lancer directement la GUI
+%PYTHON_CMD% gui_enregistrement.py
